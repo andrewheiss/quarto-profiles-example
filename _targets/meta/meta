@@ -1,0 +1,4 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+.Random.seed|object|ac443ad289832d5b|||||||||||||||
+document_nice|stem|a953225e0befb504|5e211cce38fe2912|d84d7cdd1c3c4b08|15095354|output*example.qmd*_quarto-nice.yml*_quarto.yml|t19457.7154311806s|8e22787ce7606b4a|15358|file|local|vector|||3.608||
+document_ugly|stem|a83336edbbabf3cd|f7557a20a3251f46|d84d7cdd1c3c4b08|-540694638|output-ugly*example.qmd*_quarto-ugly.yml*_quarto.yml|t19457.7154693268s|bcea92eb32e5135b|25078|file|local|vector|||3.287||

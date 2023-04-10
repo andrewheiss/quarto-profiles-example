@@ -8,6 +8,16 @@ format: gfm
 
 It's possible to create multiple versions of the same document with the same output format (i.e. multiple types of PDFs) using Quarto's [Project Profiles](https://quarto.org/docs/projects/profiles.html). This repository shows a quick example of how to do it.
 
+---
+
+::: {.callout-note}
+## Update! Switching profiles with {targets}
+
+It's now possible to switch profiles with {targets} and {tarchetypes}. [See below ↓ for details!](#switching-profiles-with-targets)
+:::
+
+---
+
 There are three `_quarto.yml` files here:
 
 1. `_quarto.yml` defines the overall project settings and sets the default profile to `nice`:
@@ -65,3 +75,27 @@ quarto render example.qmd --profile ugly
 This will tell Quarto to use the `ugly` profile and it will generate a PDF like this at [`output-ugly/example.pdf`](output-ugly/example.pdf):
 
 ![](img/example-ugly.png){width=100%}
+
+
+## Switching profiles with {targets}
+
+Switching between the two profiles is easy enough with command line switches, but it can annoying to run multiple commands (especially since you can ordinarily make multiple formats like HTML, Word, and PDF simultaneously—that doesn't work with multiple versions of the same output format). 
+
+Fortunately the [{targets}](https://docs.ropensci.org/targets/) package (and its cousin [{tarchetypes}](https://docs.ropensci.org/tarchetypes/)) can generate both versions of the PDF at the same time. Starting with [the March 11, 2023 version of {tarchetypes}](https://github.com/ropensci/tarchetypes/commit/29b8e7714be8acacdcaa660483a778183078c21a) it's possible to pass the name of a specific profile to `tar_quarto()`, like so:
+
+```r
+list(
+  tar_quarto(document_nice, path = ".", profile = "nice"),
+  tar_quarto(document_ugly, path = ".", profile = "ugly")
+)
+```
+
+That means that we can generate both PDFs simultaneously with this R command:
+
+```r
+library(targets)
+tar_make()
+
+# Or to just make the documents:
+tar_make(starts_with("document_"))
+```
