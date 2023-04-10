@@ -52,7 +52,8 @@ There are three `_quarto.yml` files here:
     ```
 
 With these three files, rendering the document will automatically use
-the `nice` profile and generate a PDF like this at `output/example.pdf`:
+the `nice` profile and generate a PDF like this at
+[`output/example.pdf`](output/example.pdf):
 
 <img src="img/example-nice.png" style="width:100.0%" />
 
@@ -71,6 +72,6 @@ quarto render example.qmd --profile ugly
 ```
 
 This will tell Quarto to use the `ugly` profile and it will generate a
-PDF like this at `output-ugly/example.pdf`:
+PDF like this at [`output-ugly/example.pdf`](output-ugly/example.pdf):
 
 <img src="img/example-ugly.png" style="width:100.0%" />

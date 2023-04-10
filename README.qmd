@@ -44,7 +44,7 @@ There are three `_quarto.yml` files here:
        sansfont: "Papyrus"
    ```
 
-With these three files, rendering the document will automatically use the `nice` profile and generate a PDF like this at `output/example.pdf`:
+With these three files, rendering the document will automatically use the `nice` profile and generate a PDF like this at [`output/example.pdf`](output/example.pdf):
 
 ![](img/example-nice.png){width=100%}
 
@@ -62,6 +62,6 @@ Or use a command line option:
 quarto render example.qmd --profile ugly
 ```
 
-This will tell Quarto to use the `ugly` profile and it will generate a PDF like this at `output-ugly/example.pdf`:
+This will tell Quarto to use the `ugly` profile and it will generate a PDF like this at [`output-ugly/example.pdf`](output-ugly/example.pdf):
 
 ![](img/example-ugly.png){width=100%}
