@@ -1,0 +1,7 @@
+project:
+  output-dir: "output-ugly"
+
+format:
+  pdf:
+    mainfont: "Comic Sans MS"
+    sansfont: "Papyrus"

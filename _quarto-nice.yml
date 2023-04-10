@@ -1,0 +1,7 @@
+project:
+  output-dir: "output"
+
+format:
+  pdf:
+    mainfont: "EB Garamond"  # https://fonts.google.com/specimen/EB+Garamond
+    sansfont: "Jost"         # https://fonts.google.com/specimen/Jost
