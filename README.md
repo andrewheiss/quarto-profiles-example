@@ -54,10 +54,7 @@ There are three `_quarto.yml` files here:
 With these three files, rendering the document will automatically use
 the `nice` profile and generate a PDF like this at `output/example.pdf`:
 
-<figure>
-<img src="img/example-nice.png" style="width:100.0%" alt="Nice PDF" />
-<figcaption aria-hidden="true">Nice PDF</figcaption>
-</figure>
+<img src="img/example-nice.png" style="width:100.0%" />
 
 To generate the ugly PDF, you can either set an environment variable:
 
@@ -76,7 +73,4 @@ quarto render example.qmd --profile ugly
 This will tell Quarto to use the `ugly` profile and it will generate a
 PDF like this at `output-ugly/example.pdf`:
 
-<figure>
-<img src="img/example-ugly.png" style="width:100.0%" alt="Ugly PDF" />
-<figcaption aria-hidden="true">Ugly PDF</figcaption>
-</figure>
+<img src="img/example-ugly.png" style="width:100.0%" />
